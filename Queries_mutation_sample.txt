@@ -1,0 +1,49 @@
+
+
+------ add product 
+
+mutation {
+  addProduct(
+    category: "Electronics"
+    productName: "Wireless Headphones"
+    price: 199
+    colors: ["Black", "White"]
+  ) {
+    id
+    category
+    productName
+    price
+    colors
+  }
+}
+
+
+-- get all product 
+query {
+  getProductsList {
+    id
+    category
+    productName
+    price
+    colors
+  }
+}
+
+----- product by id 
+query {
+  getProduct(id: "682b182b27ed5cac3a6390f4") {
+    id
+    category
+    productName
+    price
+    colors
+  }
+}
+
+-- delete product
+mutation {
+  deleteProduct(id: "682b19ad27ed5cac3a6390fc")
+}
+
+
+
