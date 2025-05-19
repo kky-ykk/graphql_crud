@@ -1,10 +1,9 @@
 
 const bodyParser = require('body-parser');
-const express  = require('express');
-const cors = require('cors');
+// const express  = require('express');
+// const cors = require('cors');
 const { ApolloServer } = require('apollo-server');
-const { default: mongoose } = require('mongoose');
-const url = "mongodb://localhost:27017/";
+// const { default: mongoose } = require('mongoose');
 const schema = require('./graphQLSchema');
 
 const server = new ApolloServer({
